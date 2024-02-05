@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .3s ease;
+}
+
+h1,h2,h3,button,input[type="color"]{
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    outline: none;
+}
+
+#app{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 300px;
+    height: 400px;
+    margin: auto;
+    box-shadow: 0 0 4px 0px;
+    text-align: center;
+}
+
+#app h1{
+    padding: 10px;
+    background-color: rgb(206, 202, 202);
+}
+
+#app button{
+    width: 100%;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    background: green;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#app #boxs{
+
+}
+
+#app .box{
+    width: 90px;
+    height: 90px;
+    box-shadow: 0px 0px 4px 0px;
+    margin: 5px;
+    float: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#app .box:hover{
+    transform : scale(1.1);
+}
+
+#start-btn.on{
+    background-color: green;
+}
+
+#start-btn.off{
+    background-color: red;
+}
+
+#gameConfig{
+    width: 200px;
+    box-shadow: 0px 0px 4px 0px #939393;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: fit-content;
+    margin: auto;
+    left: 10%;
+    text-align: center;  
+    font-family: monospace;
+}
+
+#gameConfig h2{
+
+    padding: 20px;
+
+}
+
+
+#gameConfig h3{
+
+    width: 100%;
+    margin: 0px 0px 10px;
+    background-color: #e1e1e1;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    overflow: hidden;
+}
+
+#gameConfig .line{
+    margin: 10px 0px;
+    height: 40px;
+}
+
+#gameConfig span{
+
+    float: left;
+    width: 100px;
+    padding: 5px;
+    line-height: 3;
+    font-size: 16px;
+
+}
+
+#gameConfig input{
+
+    float: right;
+    width: 80px;
+    padding: 5px;
+    font-size: 26px;
+    text-align: center;
+    height: 40px;
+    margin: 10px;
+
+}
+
+input[type="color"]{
+    padding: 0 !important;
+    cursor: pointer;
+}
+
+.one{
+    color: green;
+    background: white;
+}
+
+.two{
+    color: red;
+    background: white;
+}
+
+#boxs.off{
+    opacity: .5;
+}
+
+#boxs.on{
+    opacity: 1;
+}

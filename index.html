@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toc</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="gameConfig">
+        <h2>Configuration</h2>
+        <h3>Sing</h3>
+        
+        <div class="line">
+            <span>Player 1</span><input type="text" id="player-one-sing" player-one-sing="X" value="X" /> 
+        </div>
+
+        <div class="line">
+             <span>Player 2</span><input type="text" id="player-two-sing" player-two-sing="O" value="O" /> 
+        </div>
+
+        <h3>Sing Color</h3>
+
+        <div class="line">
+            <span>Player 1</span><input type="color" id="player-one-color" player-one-color="green" value="#008000"/> 
+        </div>
+
+        <div class="line">
+            <span>Player 2</span><input type="color" id="player-two-color" player-two-color="red" value="#ff0000" />
+        </div>
+
+        <h3>Backgound Color</h3>
+
+        <div class="line">
+            <span>Player 1</span><input type="color" id="player-one-bg-color" player-one-bg-color="green" value="#ffffff"/> 
+        </div>
+
+        <div class="line">
+            <span>Player 2</span><input type="color" id="player-two-bg-color" player-two-bg-color="red" value="#ffffff" />
+        </div> 
+
+    </div>
+    <div id="app" playerID="0">
+        <h1>Tic Tac Toe</h1>
+        <button id="start-btn" class="off">Start</button>
+        <div id="boxs" class="off">
+        </div>
+    </div>
+    <script src="code.js"></script>
+</body>
+</html>
